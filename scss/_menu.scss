@@ -11,7 +11,7 @@
     width: 28px;
     height: 3px;
     margin: 5px 0;
-    background-color: #fff;
+    background-color: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -43,7 +43,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -66,7 +65,7 @@
   &-nav {
     margin: 0;
     padding: 0;
-    background-color: darken($primary-color, 5%);
+    background-color: rgba(darken($primary-color, 5%), 0.9);
     list-style: none;
     transform: translate3d(0, -100%, 0);
     @include easeOut;
@@ -79,7 +78,7 @@
 
   // Branding side of menu
   &-branding {
-    background-color: darken($primary-color, 2%);
+    background-color: rgba(darken($primary-color, 2%), 0.9);
 
     transform: translate3d(0, 100%, 0);
     @include easeOut;
@@ -121,7 +120,7 @@
     letter-spacing: 0.03em;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

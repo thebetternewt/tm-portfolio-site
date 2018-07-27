@@ -1,11 +1,9 @@
 // Widescreens
 @include mediaXl {
-
 }
 
 // Desktops & Laptops
 @include mediaLg {
-
 }
 
 // Tablets
@@ -27,25 +25,35 @@
     min-height: 0;
 
     &.show {
-      transform: translate3d(0,0,0);
+      transform: translate3d(0, 0, 0);
     }
   }
 
   .menu-nav {
     height: 75vh;
-    transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%, 0, 0);
     font-size: 0.9em;
   }
 
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%,0,0);
+    transform: translate3d(100%, 0, 0);
 
     .portrait {
       height: 20vh;
       width: 20vh;
       background-image: url('../img/portrait_small.jpg');
     }
+  }
+
+  .about-info {
+    grid-template-areas:
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+    grid-template-columns: 1fr;
   }
 }
 
