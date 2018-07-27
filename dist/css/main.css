@@ -192,6 +192,25 @@ main {
       border-color: #eece1a;
       transition: all 300ms ease-out; }
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem; }
+  .contact-info div {
+    font-size: 1.3rem;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 2rem;
+    transition: all 300ms ease-out; }
+    .contact-info div:hover {
+      background-color: #eece1a;
+      color: #000;
+      padding: 0.5rem 2.5rem; }
+      .contact-info div:hover span {
+        color: #000; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
